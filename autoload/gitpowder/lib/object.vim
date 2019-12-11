@@ -1,5 +1,9 @@
 let s:Object = {'_type': 'obj'}
 
+function! s:Object.new() dict
+    return copy(self)
+endfunction
+
 function! s:Object.originate(blueprint) dict
     let base = copy(self)
     let base._parent = self
