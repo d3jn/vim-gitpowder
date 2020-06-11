@@ -7,7 +7,7 @@ let s:Window = g:gitpowder#lib#object#.originate('window', {
 
 " Create new window instance.
 function! s:Window.new(buffer, is_vertical) dict
-    if !g:gitpowder#lib#buffer#.sameAs(a:buffer)
+    if !g:gitpowder#lib#buffer#.isSameAs(a:buffer)
         echoerr 'Argument "buffer" must be of type "g:gitpowder#libl#buffer#"!'   
         return
     endif

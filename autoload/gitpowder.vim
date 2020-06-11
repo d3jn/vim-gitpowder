@@ -42,4 +42,3 @@ function! s:GetFileVersions()
 
     return versions
 endfunction
-
